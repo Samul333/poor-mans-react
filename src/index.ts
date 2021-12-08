@@ -1,11 +1,11 @@
 import { User } from "./models/User";
-import axios from 'axios'
-import { UserForm } from "./views/UserForm";
+import { App } from "./views/App";
+
 
 
 const user = User.buildUser({name:"Jam",age:20})
 
-const userForm  = new UserForm(
+const userForm  = new App(
     document.getElementById('root'),
     user
 )
